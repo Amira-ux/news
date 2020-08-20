@@ -31,7 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # ?local
+    'pages',
     'users',
+     #? 3rd party
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,3 +128,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL ="users.CustomUser"
 LOGIN_REDIRECT_URL="home"
 LOGOUT_REDIRECT_URL="home"
+
+CRISPY_TEMPLATE_PACK="bootstrap4"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "Your Sendgrid from Email"
