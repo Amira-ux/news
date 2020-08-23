@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # ?local
     'pages',
     'users',
+    'articles',
      #? 3rd party
     'crispy_forms',
     'django.contrib.admin',
@@ -132,3 +133,5 @@ LOGOUT_REDIRECT_URL="home"
 CRISPY_TEMPLATE_PACK="bootstrap4"
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "Your Sendgrid from Email"
+LANGUAGE_CODE="en-us"
+TIME_ZONE="Africa/Cairo"
