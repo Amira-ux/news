@@ -6,6 +6,7 @@ from django.views.generic.edit import UpdateView,DeleteView,CreateView
 from django.urls import reverse_lazy
 
 from .models import Article
+
 # Create your views here.
 class ArticleListView(LoginRequiredMixin,ListView):
     model=Article

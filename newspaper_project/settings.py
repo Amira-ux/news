@@ -35,8 +35,11 @@ INSTALLED_APPS = [
     'pages',
     'users',
     'articles',
+    'rest_framework',
+    'api',
      #? 3rd party
     'crispy_forms',
+    'rest_auth',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,3 +138,8 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "Your Sendgrid from Email"
 LANGUAGE_CODE="en-us"
 TIME_ZONE="Africa/Cairo"
+
+REST_FRAMEWORK={
+    "DEFAULT_PERMISSION_CLASSES":["rest_framework.permissions.IsAuthenticated",] 
+    }
+   
